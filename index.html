@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	<title >HOME</title>
+	
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="modal.css">
+	<link rel="stylesheet" href="we.css">
+
+	<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<div class="topnav">
+  <a class="active" href="index.html"><b>Home</b></a>
+ 
+   <div class="topnav-right">
+    <a  href="BasicBarTool.html"><b>BASIC BAR TOOLS AND EQUIPMENT</a>
+  <a href="BeverageAndDrink.html">BEVERAGES AND DRINKS RECIPES</a>
+  <a href="About.html">ABOUT</a></b>
+  </div>
+	
+</div>
+
+<div class="container">
+	<center>	<font style="color:white;"><h1 > <div class="home">HOME PAGE </div></h1></font></center>
+		<br>
+	<center><h2 style="color:black;">INTRODUCTION TO BARTENDING</h2><br><br></center>
+	
+	<div class="top-content" style="width:1000px; height:200px; border: 2px solid black;">
+	
+		
+	<center><p style="color:black;font-family:Edwardian Script ITC;font-size:40px"  >A bartender is someone who serves drinks behind a bar in a bar, pub, tavern or similar establishment. This usually includes alcoholic beverages of some kind, such as beer (both draught and bottled), wine and/or cocktails, as well as soft drinks or other non-alcoholic beverages.</p>		
+</center>
+		
+	
+	</div>
+	
+	<br>		
+
+<br>
+<br>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/c1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/c2.webp" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/c5.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
